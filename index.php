@@ -251,3 +251,14 @@ function test_input($data)
 </body>
 
 </html>
+
+
+<?php 
+$sql = "SELECT * FROM studentForm";
+$rs = mysqli_query($con, $sql);
+while($data = mysqli_fetch_assoc($rs)){
+
+$Q = $data['name'];
+echo "<img src='images/$Q'>";
+}
+?>
