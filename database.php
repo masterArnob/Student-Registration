@@ -2,7 +2,7 @@
 $dbMechine = "localhost";
 $userName = "root";
 $pass="";
-$dbName = "studentForm";
+$dbName = "studentform";
 $con = "";
 
 

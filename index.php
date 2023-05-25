@@ -70,6 +70,7 @@ if (isset($_POST['submit'])) {
                             try {
                                 mysqli_query($con, $sql);
                                 echo "<br>saved in database";
+                                header('location:display.php');
                             } catch (mysqli_sql_exception) {
                                 echo "<br>could not save in database";
                             }
